@@ -1,0 +1,16 @@
+#time_bg{
+    background: rgb(200,132,218);
+    background: linear-gradient(90deg, rgba(200,132,218,1) 25%, rgba(209,74,161,1) 56%, rgba(194,37,107,1) 95%);
+}
+#nav_bg{
+    background: rgb(236,202,245);
+    background: linear-gradient(90deg, rgba(236,202,245,1) 25%, rgba(205,91,164,1) 56%, rgba(200,68,127,1) 95%);
+}
+#slide_bg{
+    background: rgb(236,202,245);
+    background: linear-gradient(90deg, rgba(236,202,245,1) 25%, rgba(205,91,164,1) 56%, rgba(200,68,127,1) 95%);
+}
+#service_bg{
+    background: rgb(236,202,245);
+    background: linear-gradient(90deg, rgba(236,202,245,1) 25%, rgba(205,91,164,1) 56%, rgba(200,68,127,1) 95%);
+}

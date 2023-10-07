@@ -18,6 +18,14 @@ const NavBar = () =>{
                  className={({ isActive, isPending }) =>
                  isPending ? "pending" : isActive ? "text-red-400 font-bold underline" : "text-white" } style={{}}>CONTACT
                 </NavLink>
+                <NavLink to="/login" 
+                 className={({ isActive, isPending }) =>
+                 isPending ? "pending" : isActive ? "text-red-400 font-bold underline" : "text-white" } style={{}}>LOGIN
+                </NavLink>
+                <NavLink to="/register" 
+                 className={({ isActive, isPending }) =>
+                 isPending ? "pending" : isActive ? "text-red-400 font-bold underline" : "text-white" } style={{}}>REGISTER
+                </NavLink>
                 <button className=" text-white rounded-md px-3 py-1 font-bold" style={{backgroundColor:"#CE1446"}}>Login</button>
             </div>
         </div>

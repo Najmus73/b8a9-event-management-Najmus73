@@ -13,6 +13,7 @@ import ServiceDetail from './components/ServiceDetail/ServiceDetail';
 import Register from './components/Register/Register';
 import AuthProvider from './components/AuthProvider/AuthProvider';
 import Login from './components/Login/Login';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 const router = createBrowserRouter([
   {
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
       },
       {
         path:'/details/:id',
-        element:<ServiceDetail></ServiceDetail>,
+        element:<PrivateRoute><ServiceDetail></ServiceDetail></PrivateRoute>,
         loader : () => fetch('/EventData.json')
       },
       {

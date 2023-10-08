@@ -1,11 +1,11 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
+import swal from 'sweetalert';
 
 
 
 const Register = () => {
-
     const { registerUser } = useContext(AuthContext);
     const navigate = useNavigate();
 
@@ -16,15 +16,26 @@ const Register = () => {
         const email = e.target.email.value;
         const password = e.target.password.value
 
+        
+        if(password.length <6){
+            swal("error", "Password should be at least 6 characters or longer", "error");
+             return;
+        }else if(!/[A-Z]/.test(password)){
+             swal("error", "Password should have at least one Upper case latter", "error");
+             return;
+        }else if(!/(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$/.test(password)){
+             swal("error", "Password should have at least one special character", "error");         
+             return;
+        }
 
         registerUser(email, password)
             .then(res => {
-                console.log(res.user)
+                swal("Good job!", "Successfully registered, Now you can login!", "success")
                 e.target.reset()
                 navigate('/login')
             })
             .catch(err => {
-                console.error(err)
+                swal("error", `${err.message}`, "error");
             })
 
     }

@@ -1,9 +1,11 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
 import { FcGoogle } from 'react-icons/fc';
+import swal from 'sweetalert';
 
 const Login = () =>{
+    const [logInError,setLogInError] = useState();
 
    const { LogInUser,LogInWithGoogle } = useContext(AuthContext)
    const navigate = useNavigate();
@@ -15,12 +17,12 @@ const Login = () =>{
 
         LogInUser(email,password)
         .then(res=>{
-            console.log(res.user);
+            swal("Good job!", "Successfully Logged In,", "success")
             e.target.reset()
             navigate('/');
         })
         .catch(err=>{
-            console.error(err);
+            swal("error", `${err.message}`, "error");
         })
 
     }
@@ -28,10 +30,11 @@ const Login = () =>{
     const handleGoogleLogin = () =>{
         LogInWithGoogle()
         .then(res=>{
-            console.log(res.user);
+            swal("Good job!", "Successfully Logged In,", "success")
+            navigate('/');
         })
         .catch(err=>{
-            console.error(err);
+            swal("error", `${err.message}`, "error");
         })
     }
 

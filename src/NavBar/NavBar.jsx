@@ -1,16 +1,20 @@
 import { useContext } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../components/AuthProvider/AuthProvider";
+import swal from 'sweetalert';
 
 const NavBar = () => {
 
     const { user, logOut } = useContext(AuthContext);
 
+    const navigate = useNavigate();
+
     const handleSignOut = () => {
         logOut()
             .then(() => {
                 if (user) {
-                    alert('ok')
+                    swal("Good job!", "Successfully Sign Out,", "success")
+                    navigate('/login')
                 }
             })
             .catch(err => {
@@ -52,7 +56,7 @@ const NavBar = () => {
                     {
                         user ? <>
                             <span className="text-white">{user.email}</span>
-                            <button onClick={handleSignOut} className=" text-white rounded-md px-3 py-1 font-bold" style={{ backgroundColor: "#CE1446" }}>Sign Out</button>
+                            <button onClick={handleSignOut} className=" text-white rounded-md px-3 py-1 font-bold" style={{ backgroundColor: "#CE1446" }}>Log Out</button>
                         </>
                             :
                             <Link to="/login"><button className=" text-white rounded-md px-3 py-1 font-bold" style={{ backgroundColor: "#CE1446" }}>Login</button></Link>

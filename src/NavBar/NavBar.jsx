@@ -9,7 +9,7 @@ const NavBar = () => {
     const handleSignOut = () => {
         logOut()
             .then(() => {
-                if(user){
+                if (user) {
                     alert('ok')
                 }
             })
@@ -27,14 +27,20 @@ const NavBar = () => {
                         className={({ isActive, isPending }) =>
                             isPending ? "pending" : isActive ? "text-red-400 font-bold underline" : "text-white"} style={{}}>HOME
                     </NavLink>
-                    <NavLink to="/blog"
-                        className={({ isActive, isPending }) =>
-                            isPending ? "pending" : isActive ? "text-red-400 font-bold underline" : "text-white"} style={{}}>BLOG
-                    </NavLink>
-                    <NavLink to="/contact"
-                        className={({ isActive, isPending }) =>
-                            isPending ? "pending" : isActive ? "text-red-400 font-bold underline" : "text-white"} style={{}}>CONTACT
-                    </NavLink>
+
+                    {
+                        user && <>
+                            <NavLink to="/blog"
+                                className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "text-red-400 font-bold underline" : "text-white"} style={{}}>BLOG
+                            </NavLink>
+                            <NavLink to="/contact"
+                                className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "text-red-400 font-bold underline" : "text-white"} style={{}}>CONTACT
+                            </NavLink>
+                        </>
+                    }
+
                     <NavLink to="/login"
                         className={({ isActive, isPending }) =>
                             isPending ? "pending" : isActive ? "text-red-400 font-bold underline" : "text-white"} style={{}}>LOGIN
@@ -45,13 +51,13 @@ const NavBar = () => {
                     </NavLink>
                     {
                         user ? <>
-                           <span className="text-white">{user.email}</span>
-                           <button onClick={handleSignOut} className=" text-white rounded-md px-3 py-1 font-bold" style={{ backgroundColor: "#CE1446" }}>Sign Out</button>
+                            <span className="text-white">{user.email}</span>
+                            <button onClick={handleSignOut} className=" text-white rounded-md px-3 py-1 font-bold" style={{ backgroundColor: "#CE1446" }}>Sign Out</button>
                         </>
-                        :
-                         <Link to="/login"><button className=" text-white rounded-md px-3 py-1 font-bold" style={{ backgroundColor: "#CE1446" }}>Login</button></Link>
+                            :
+                            <Link to="/login"><button className=" text-white rounded-md px-3 py-1 font-bold" style={{ backgroundColor: "#CE1446" }}>Login</button></Link>
                     }
-                    
+
                 </div>
             </div>
         </div>

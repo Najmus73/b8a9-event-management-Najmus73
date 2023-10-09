@@ -6,7 +6,7 @@ import swal from 'sweetalert';
 
 
 const Register = () => {
-    const { registerUser } = useContext(AuthContext);
+    const { registerUser,logOut } = useContext(AuthContext);
     const navigate = useNavigate();
 
 
@@ -32,6 +32,7 @@ const Register = () => {
             .then(res => {
                 swal("Good job!", "Successfully registered, Now you can login!", "success")
                 e.target.reset()
+                logOut()
                 navigate('/login')
             })
             .catch(err => {
@@ -41,7 +42,7 @@ const Register = () => {
     }
 
     return (
-        <div className="w-[1200px] mx-auto">
+        <div className="w-[1200px] mx-auto pb-[155px]">
             <div className="relative flex flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none w-[600px] mx-auto pt-10 pl-[108px]">
                 <h4 className="block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
                     Sign Up

@@ -6,6 +6,7 @@ import swal from 'sweetalert';
 const NavBar = () => {
 
     const { user, logOut } = useContext(AuthContext);
+    
 
     const navigate = useNavigate();
 
@@ -13,7 +14,7 @@ const NavBar = () => {
         logOut()
             .then(() => {
                 if (user) {
-                    swal("Good job!", "Successfully Sign Out,", "success")
+                    swal("Good job!", "Successfully Sign Out", "success")
                     navigate('/login')
                 }
             })
@@ -29,37 +30,47 @@ const NavBar = () => {
                 <div className="flex gap-10 items-center">
                     <NavLink to="/"
                         className={({ isActive, isPending }) =>
-                            isPending ? "pending" : isActive ? "text-red-400 font-bold underline" : "text-white"} style={{}}>HOME
+                            isPending ? "pending" : isActive ? "text-blue-400 border border-white p-1 px-2 font-bold" : "text-white"} style={{}}>HOME
                     </NavLink>
 
                     {
                         user && <>
                             <NavLink to="/blog"
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "text-red-400 font-bold underline" : "text-white"} style={{}}>BLOG
+                                    isPending ? "pending" : isActive ? "text-blue-400 border border-white p-1 px-2 font-bold" : "text-white"} style={{}}>BLOG
                             </NavLink>
                             <NavLink to="/contact"
                                 className={({ isActive, isPending }) =>
-                                    isPending ? "pending" : isActive ? "text-red-400 font-bold underline" : "text-white"} style={{}}>CONTACT
+                                    isPending ? "pending" : isActive ? "text-blue-400 border border-white p-1 px-2 font-bold" : "text-white"} style={{}}>CONTACT
                             </NavLink>
                         </>
                     }
 
-                    <NavLink to="/login"
+                   {
+                    !user && <>
+                          <NavLink to="/login"
                         className={({ isActive, isPending }) =>
-                            isPending ? "pending" : isActive ? "text-red-400 font-bold underline" : "text-white"} style={{}}>LOGIN
+                            isPending ? "pending" : isActive ? "text-blue-400 border border-white p-1 px-2 font-bold" : "text-white"} style={{}}>LOGIN
                     </NavLink>
                     <NavLink to="/register"
                         className={({ isActive, isPending }) =>
-                            isPending ? "pending" : isActive ? "text-red-400 font-bold underline" : "text-white"} style={{}}>REGISTER
+                            isPending ? "pending" : isActive ? "text-blue-400 border border-white p-1 px-2 font-bold" : "text-white"} style={{}}>REGISTER
                     </NavLink>
+                    </>
+                   }
+                   
                     {
                         user ? <>
-                            <span className="text-white">{user.email}</span>
-                            <button onClick={handleSignOut} className=" text-white rounded-md px-3 py-1 font-bold" style={{ backgroundColor: "#CE1446" }}>Log Out</button>
+                            <span className="text-white font-bold">{user.displayName}</span>
+                            <div className="avatar">
+                                <div className="w-8 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                    <img src={user.photoURL} />
+                                </div>
+                            </div>
+                            <button onClick={handleSignOut} className=" text-white rounded-md px-3 py-1 font-bold border border-white bg-red-600">Log Out</button>
                         </>
                             :
-                            <Link to="/login"><button className=" text-white rounded-md px-3 py-1 font-bold" style={{ backgroundColor: "#CE1446" }}>Login</button></Link>
+                            <Link to="/login"><button className=" text-white rounded-md px-3 py-1 font-bold bg-red-600">Login</button></Link>
                     }
 
                 </div>

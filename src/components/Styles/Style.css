@@ -14,3 +14,13 @@
     background: rgb(236,202,245);
     background: linear-gradient(90deg, rgba(236,202,245,1) 25%, rgba(205,91,164,1) 56%, rgba(200,68,127,1) 95%);
 }
+#footer{
+    background: rgb(192,116,212);
+background: linear-gradient(90deg, rgba(192,116,212,1) 19%, rgba(210,167,194,1) 51%, rgba(199,86,136,1) 77%);
+  
+}
+#stats{
+    background-image: url("https://i.ibb.co/jrzsQv0/event.jpg");
+    background-repeat: 'no-repeat'; 
+    background-size : 1920px 300px
+}

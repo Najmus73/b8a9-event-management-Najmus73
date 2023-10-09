@@ -17,7 +17,7 @@ const Login = () =>{
 
         LogInUser(email,password)
         .then(res=>{
-            swal("Good job!", "Successfully Logged In,", "success")
+            swal("Good job!", "Successfully Logged In", "success")
             e.target.reset()
             navigate('/');
         })
@@ -30,7 +30,7 @@ const Login = () =>{
     const handleGoogleLogin = () =>{
         LogInWithGoogle()
         .then(res=>{
-            swal("Good job!", "Successfully Logged In,", "success")
+            swal("Good job!", "Successfully Logged In", "success")
             navigate('/');
         })
         .catch(err=>{
@@ -39,7 +39,7 @@ const Login = () =>{
     }
 
     return (
-        <div className="w-[1200px] mx-auto flex justify-center gap-20">
+        <div className="w-[1200px] mx-auto flex justify-center gap-20 pb-[220px]">
             <div className="relative flex flex-col rounded-xl bg-transparent bg-clip-border text-gray-700 shadow-none   pt-10 ">
                 <h4 className="block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
                     Log In

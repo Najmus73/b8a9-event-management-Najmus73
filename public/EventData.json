@@ -1,45 +1,69 @@
 [
     {
         "id": 1,
-        "image":"https://i.ibb.co/F0QF5y3/birthday-Card.jpg",
-        "bg_image":"https://i.ibb.co/F0QF5y3/birthday-Card.jpg",
-        "category":"Birthday",
-        "title":"Birthday can be beautiful with our loves",
-        "bg":"#F87171"
+        "image":"https://i.ibb.co/1QBRZ3T/luxurious.jpg",
+        "bg_image":"https://i.ibb.co/1QBRZ3T/luxurious.jpg",
+        "category":"Wedding",
+        "title":"Your Wedding can be beautiful with our Arrangements",
+        "short_details":"Your Wedding can be beautiful with our Arrangements. We have some good offers. Most welcome to check them out",
+        "price": "3500",
+        "bg":"#D77FBF",
+        "details":"A wedding planner is a professional who assists with the design, planning and management of a client's wedding. Weddings are significant events in people's lives and as such, couples are often willing to spend considerable amount of money to ensure that their weddings are well-organized. Wedding planners are often used by couples who work long hours and have little spare time available for sourcing and managing wedding venues and wedding suppliers.Professional wedding planners are based worldwide but the industry is the largest in the USA, India, western Europe and China.[1][2] Various wedding planning courses are available to those who wish to pursue the career.[3] Planners generally charge either a percentage of the total wedding cost, or a flat fee."
+
     },
     {
         "id": 2,
-        "image":"https://i.ibb.co/F0QF5y3/birthday-Card.jpg",
-        "category":"Birthday",
-        "title":"Birthday can be beautiful with our loves",
-        "bg":"#F87171"
+        "image":"https://i.ibb.co/CtzdH1V/baby.jpg",
+        "bg_image":"https://i.ibb.co/CtzdH1V/baby.jpg",
+        "category":"Baby Shower",
+        "title":"Baby Shower can be beautiful with our Arrangements",
+        "short_details":"Your Baby Shower can be beautiful with our Arrangements. We have some good offers. Most welcome to check them out",
+        "price": "2900",
+        "bg":"#D77FBF",
+        "details":"Organizing a baby shower may be compared to preparing for a wedding. As the host, you undoubtedly want the celebration to be ideal for the pregnant parents you’re honoring, and there are several details to consider. While establishing a guest list or determining what games to play might feel stressful, there are simple things you can do to make the occasion entertaining and straightforward."
     },
     {
         "id": 3,
-        "image":"https://i.ibb.co/F0QF5y3/birthday-Card.jpg",
-        "category":"Birthday",
-        "title":"Birthday can be beautiful with our loves",
-        "bg":"#F87171"
+        "image":"https://i.ibb.co/QfZchxg/people.jpg",
+        "bg_image":"https://i.ibb.co/QfZchxg/people.jpg",
+        "category":"Anniversaries",
+        "title":"Anniversaries can be beautiful with our Arrangements",
+        "short_details":"Your Anniversaries can be beautiful with our Arrangements. We have some good offers. Most welcome to check them out",
+        "price": "2600",
+        "bg":"#D77FBF",
+        "details":"Whether you’re planning a ten-year anniversary party for your friends or planning a diamond wedding anniversary party for your parents, throwing an anniversary party is a great way to honor a couple’s time spent together. Anniversary parties not only help the couple cherish their marriage, but also allow loved ones a chance to let the couple know how much their union has influenced those around them. Throwing an anniversary party may seem complicated but we’ve provided all of the important steps on how to plan an anniversary party below."
     },
     {
         "id": 4,
-        "image":"https://i.ibb.co/F0QF5y3/birthday-Card.jpg",
+        "image":"https://i.ibb.co/3WWPgFx/birthday.jpg",
+        "bg_image":"https://i.ibb.co/3WWPgFx/birthday.jpg",
         "category":"Birthday",
-        "title":"Birthday can be beautiful with our loves",
-        "bg":"#F87171"
+        "title":"Birthday can be beautiful with our Arrangements",
+        "short_details":"Your Birthday can be beautiful with our Arrangements. We have some good offers. Most welcome to check them out",
+        "price": "1500",
+        "bg":"#D77FBF",
+        "details":"This is the time of year when I start planning all of my children’s birthday parties which is an activity that I sincerely enjoy doing. Absorbing the excited expressions on my children’s faces brings me more joy than the satisfaction of knowing that they acknowledged the event itself. There are several important details I need to remember when planning an event such as this: location, decorations, theme, guest list, and of course the menu. I take pride in my opinion of organizational skills contributing to a flawless flow of event activities."
     },
     {
         "id": 5,
-        "image":"https://i.ibb.co/F0QF5y3/birthday-Card.jpg",
-        "category":"Birthday",
-        "title":"Birthday can be beautiful with our loves",
-        "bg":"#F87171"
+        "image":"https://i.ibb.co/6ZT67wg/senior-people.jpg",
+        "bg_image":"https://i.ibb.co/6ZT67wg/senior-people.jpg",
+        "category":"Retirement Parties",
+        "title":"Retirement Parties can be beautiful with our Arrangements",
+        "short_details":"Your Retirement Parties can be beautiful with our Arrangements. We have some good offers. Most welcome to check them out",
+        "price": "800",
+        "bg":"#D77FBF",
+        "details":"In organizing this retirement party I believe there are 5 important tasks to follow. We have to decide a date and location of the party as well as calling the locations for open dates and booking rates which should be completed within the first day of planning. Sending out invites to employees with developing a flyer for the party and sending them out to all employees also should be completed within the first day of planning. Decorating the event with the essential party decorations like balloons, paper plates etc. and with some entertainment should be completed in 3 days. Book a catering company for the food, drinks and cake that can stay within set budget, should also take a head count of confirmed attendance showing with the possibilities of a few extras so they know how much food to order, this task should be completed in 3 days. And Finally Scheduling invited employees for event and making sure the party dose not conflict with work schedules this should be completed in 1 day witch would be the last day of planning."
     },
     {
         "id": 6,
-        "image":"https://i.ibb.co/F0QF5y3/birthday-Card.jpg",
-        "category":"Birthday",
-        "title":"Birthday can be beautiful with our loves",
-        "bg":"#F87171"
+        "image":"https://i.ibb.co/6mNHL0Z/white.jpg",
+        "bg_image":"https://i.ibb.co/6mNHL0Z/white.jpg",
+        "category":"Engagement Parties",
+        "title":"Engagement Parties can be beautiful with our Arrangements",
+        "short_details":"Your Engagement Parties can be beautiful with our Arrangements. We have some good offers. Most welcome to check them out",
+        "price": "1200",
+        "bg":"#D77FBF",
+        "details":"First and foremost, congratulations! We're so happy for you and your partner. Now that the proposal's out of the way, it's time to start thinking about something else that's important—we're talking about planning your engagement party. While you don't want to take anything away from the actual wedding day, your engagement party is a great opportunity to practice or develop some useful event planning skills. Similar to the big event, you'll want to locate a venue, choose a date, create a guest list, send invitations, decide on a menu, and stick to a budget."
     }
 ]

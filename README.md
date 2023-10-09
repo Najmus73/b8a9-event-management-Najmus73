@@ -1,8 +1,10 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#Website Name - Meet & Greet
+#Website Link - 
+#5 Feature for this Web Site -
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1.#The website have log in and register from to enter the site
+2.#There have some service they can choose which one they need
+3.#For booking any service they go to details page and put information for booking.
+4.#Visitor can give us feedback by comment section
+5.# On log in they can access tow page for contact us
